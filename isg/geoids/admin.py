@@ -1,3 +1,25 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import (
+                        ModelSeries,
+                        ModelReference,
+                        Author,
+                        Responsible,
+                        GeoidType,
+                        GeoidMethod,
+                        GeoidLicence,
+                        GeoidStatus,
+                        Geoid
+                    )
+
+admin.site.register([
+                        ModelSeries,
+                        ModelReference,
+                        Author,
+                        Responsible,
+                        GeoidType,
+                        GeoidMethod,
+                        GeoidLicence,
+                        GeoidStatus,
+                        Geoid
+                    ])
